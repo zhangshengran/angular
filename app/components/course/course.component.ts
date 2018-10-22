@@ -13,7 +13,7 @@ export class CourseComponent implements OnInit {
   ngOnInit() {
     this.http.get('/api/tongbus').subscribe( data=>{ 
       this.tongbus = data;
-      console.log(data);
+     
      } );
   }
 

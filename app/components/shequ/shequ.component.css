@@ -1,0 +1,12 @@
+li{
+width: 690px;
+height: 146px;
+}
+li img{
+    width: 130px;
+    height: 90px;
+    float: left;
+}
+span{
+    float: right;
+}

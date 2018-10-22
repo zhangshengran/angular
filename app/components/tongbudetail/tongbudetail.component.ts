@@ -15,10 +15,8 @@ export class TongbudetailComponent implements OnInit {
   course;
   ngOnInit() {
     this.courseId = this.router.snapshot.params['course.id'];
-    console.log(this.courseId)
     this.http.get(`/api/courses/${this.courseId}`).subscribe(data=>{
       this.course = data;
-      console.log(data)
     })
   }
 

@@ -11,13 +11,15 @@ import { RouterModule } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { TongbudetailComponent } from './components/tongbudetail/tongbudetail.component';
 import { ErrorComponent } from './components/error/error.component';
+import { CoursedetailComponent } from './components/coursedetail/coursedetail.component';
 const rooter = [
   {path: 'home', component: HomeComponent },
   {path: 'course', component: CourseComponent },
   {path: 'shequ', component: ShequComponent },
   {path: 'tongbu', component: TongbuComponent },
   {path: 'tongbu/:course.id', component: TongbudetailComponent },
-  
+  {path: 'course/:tongbu.id', component: CoursedetailComponent },
+
   { path: "", redirectTo:"home", pathMatch:"full"},
   {path: '**', component: ErrorComponent },
 ];
@@ -31,6 +33,8 @@ const rooter = [
     HeaderComponent,
     ErrorComponent ,
     TongbudetailComponent,
+    CoursedetailComponent,
+   
   ],
   imports: [
     BrowserModule,
